@@ -1,0 +1,13 @@
+[alias]
+    br = branch
+    ci = commit
+    co = checkout
+    st = status
+[color]
+	ui = true
+[core]
+	pager = less -+F
+	excludesfile = ~/.gitignore_global
+[user]
+	name = Richard Xia
+	email = richardxia@richardxia.com
