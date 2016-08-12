@@ -108,7 +108,10 @@ if which brew > /dev/null && [[ -f $(brew --prefix)/etc/bash_completion ]] && ! 
     . $(brew --prefix)/etc/bash_completion
 fi
 
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+if [ -f $HOME/.local/bin/virtualenvwrapper.sh ]; then
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+    . $HOME/.local/bin/virtualenvwrapper.sh
+elif [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     . /usr/local/bin/virtualenvwrapper.sh
 elif [ -f /usr/local/share/python/virtualenvwrapper.sh ]; then
     . /usr/local/share/python/virtualenvwrapper.sh
