@@ -6,6 +6,7 @@ set expandtab
 set hlsearch
 set foldmethod=indent
 set laststatus=2
+set modelines=5
 set nojoinspaces
 set ruler
 set shiftwidth=4
