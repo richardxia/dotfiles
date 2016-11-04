@@ -1,10 +1,13 @@
 #!/bin/sh
 
-CONFIG_ROOT=$(cd "$(dirname $0)/config"; pwd)
+GIT_ROOT=$(cd "$(dirname $0)"; pwd)
+CONFIG_ROOT=$GIT_ROOT/config
 BACKUP_ROOT=$HOME/.configbackups
 
 echo "Symlinking files from $CONFIG_ROOT to $HOME"
 
+# TODO: Write a custom directory walker and choose to not recurse into
+# submodules under .vim/bundle
 for config_file in $(cd $CONFIG_ROOT && find . -type f | cut -c 3-)
 do
     srcfile=$CONFIG_ROOT/$config_file
