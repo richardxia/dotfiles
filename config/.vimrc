@@ -15,6 +15,7 @@ set tabstop=4
 set textwidth=80
 set wildmode=longest,list
 set wildignore+=*.pyc
+set wildignore+=*/__pycache__
 
 hi CursorLine cterm=None ctermbg=255
 
