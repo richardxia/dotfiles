@@ -11,3 +11,5 @@
 [user]
 	name = Richard Xia
 	email = richardxia@richardxia.com
+[merge]
+	conflictstyle = diff3
