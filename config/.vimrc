@@ -10,9 +10,9 @@ set laststatus=2
 set modelines=5
 set nojoinspaces
 set ruler
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set textwidth=80
 set wildmode=longest,list
 set wildignore+=*.pyc
