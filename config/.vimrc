@@ -18,6 +18,10 @@ set wildmode=longest,list
 set wildignore+=*.pyc
 set wildignore+=*/__pycache__
 
+" Disable concealing of double quotes that comes with Ubuntu's built-in JSON
+" syntax file, which conflicts with indentLine's use of the conceal feature.
+let g:vim_json_syntax_conceal = 0
+
 hi CursorLine cterm=None ctermbg=255
 
 filetype plugin indent on
