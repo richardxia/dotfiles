@@ -1,5 +1,6 @@
 syntax on
 set autoindent
+set backspace=indent,eol,start
 set cursorline
 set colorcolumn=+1
 set expandtab
