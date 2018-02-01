@@ -29,7 +29,12 @@ filetype plugin indent on
 setlocal makeprg=flake8\ %
 set makeprg=flake8\ %
 
-silent! call pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-obsession'
+
+call plug#end()
 
 " TODO: Add these to vimdiff
 " highlight DiffAdd ctermbg=157
