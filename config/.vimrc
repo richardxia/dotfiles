@@ -15,8 +15,7 @@ set softtabstop=2
 set tabstop=2
 set textwidth=80
 set wildmode=longest,list
-set wildignore+=*.pyc
-set wildignore+=*/__pycache__
+set wildignore+=*.pyc,*__pycache__/
 
 " Disable concealing of double quotes that comes with Ubuntu's built-in JSON
 " syntax file, which conflicts with indentLine's use of the conceal feature.
