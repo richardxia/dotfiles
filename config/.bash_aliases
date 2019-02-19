@@ -4,8 +4,16 @@ alias agjs='ag -G '"'(js|coffee)$'"
 alias agpy='ag -G py --ignore=migrations'
 alias agpynt='agpy --ignore=''*test*'''
 alias agdjnt='agdj --ignore=''*test*'''
+
+alias dc='docker-compose'
+alias dcr='docker-compose run --rm'
+alias dcu='docker-compose up'
+alias dr='docker run -it --rm'
+
 alias gti=git
+alias gciane='git commit --amend --no-edit'
 alias glns='git log --name-status'
+alias glp='git log --patch'
 alias grc='git rebase --continue'
 alias gri='git rebase --interactive'
 alias grnc='git revert --no-commit'
