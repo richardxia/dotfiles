@@ -104,8 +104,12 @@ fi
 
 export FIGNORE=$FIGNORE:.pyc
 
-if which brew > /dev/null && [[ -f $(brew --prefix)/etc/bash_completion ]] && ! shopt -oq posix; then
+if which brew > /dev/null; then
+  if [[ -f $(brew --prefix)/etc/bash_completion ]] && ! shopt -oq posix; then
     . $(brew --prefix)/etc/bash_completion
+  elif [[ -f $(brew --prefix)/share/bash-completion/bash_completion ]]; then
+    . $(brew --prefix)/share/bash-completion/bash_completion
+  fi
 fi
 
 if [ -f $HOME/.local/bin/virtualenvwrapper.sh ]; then
