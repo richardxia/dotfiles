@@ -14,3 +14,5 @@
 	email = richardxia@richardxia.com
 [merge]
 	conflictstyle = diff3
+[pager]
+	branch = false
