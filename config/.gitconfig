@@ -12,7 +12,8 @@
 [merge]
 	conflictstyle = diff3
 [pager]
-	branch = false
+	branch = less --no-init --quit-if-one-screen
+	tag = less --no-init --quit-if-one-screen
 [user]
 	email = richardxia@richardxia.com
 	name = Richard Xia
