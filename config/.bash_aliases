@@ -13,6 +13,8 @@ alias drv='docker run -it --rm -v $PWD:/usr/src/app -w /usr/src/app'
 
 alias gti=git
 alias gciane='git commit --amend --no-edit'
+alias gd='git diff'
+alias gdc='git diff --cached'
 alias glns='git log --name-status'
 alias glp='git log --patch'
 alias grc='git rebase --continue'
