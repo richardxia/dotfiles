@@ -1,18 +1,18 @@
 [alias]
-    br = branch
-    ci = commit
-    co = checkout
-    sh = show
-    st = status
+	br = branch
+	ci = commit
+	co = checkout
+	sh = show
+	st = status
 [color]
 	ui = true
 [core]
-	pager = less -+F
 	excludesfile = ~/.gitignore_global
-[user]
-	name = Richard Xia
-	email = richardxia@richardxia.com
+	pager = less -+F
 [merge]
 	conflictstyle = diff3
 [pager]
 	branch = false
+[user]
+	email = richardxia@richardxia.com
+	name = Richard Xia
