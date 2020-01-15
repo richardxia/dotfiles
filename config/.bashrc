@@ -104,12 +104,9 @@ fi
 
 export FIGNORE=$FIGNORE:.pyc
 
-if which brew > /dev/null; then
-  if [[ -f $(brew --prefix)/etc/bash_completion ]] && ! shopt -oq posix; then
-    . $(brew --prefix)/etc/bash_completion
-  elif [[ -f $(brew --prefix)/share/bash-completion/bash_completion ]]; then
-    . $(brew --prefix)/share/bash-completion/bash_completion
-  fi
+if type brew &>/dev/null; then
+    export BASH_COMPLETION_COMPAT_DIR="$(brew --prefix)/etc/bash_completion.d"
+    [[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 fi
 
 if [ -f $HOME/.local/bin/virtualenvwrapper.sh ]; then
