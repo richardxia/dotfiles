@@ -9,7 +9,7 @@ alias dc='docker-compose'
 alias dcr='docker-compose run --rm'
 alias dcu='docker-compose up'
 alias dr='docker run -it --rm'
-alias drv='docker run -it --rm -v $PWD:/usr/src/app -w /usr/src/app'
+alias drv='docker run -it --rm -v $PWD:/usr/src/app:delegated -w /usr/src/app'
 
 alias gti=git
 alias gap='git add --patch'
