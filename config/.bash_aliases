@@ -24,3 +24,5 @@ alias grc='git rebase --continue'
 alias gri='git rebase --interactive'
 alias grnc='git revert --no-commit'
 alias grne='git revert --no-edit'
+
+ghclone() { git clone "git@github.com:$1"; }
