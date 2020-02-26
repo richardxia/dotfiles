@@ -21,6 +21,11 @@ set wildignore+=*.pyc,*__pycache__/
 " syntax file, which conflicts with indentLine's use of the conceal feature.
 let g:vim_json_syntax_conceal = 0
 
+" Configure the vim-scala to properly indent Scaladoc comments with the star
+" aligned to the right.
+" https://github.com/derekwyatt/vim-scala#scaladoc-comment-indentation
+let g:scala_scaladoc_indent = 1
+
 hi CursorLine cterm=None ctermbg=255
 
 filetype plugin indent on
