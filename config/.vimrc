@@ -5,6 +5,7 @@ set cursorline
 set colorcolumn=+1
 set expandtab
 set hlsearch
+set nofoldenable
 set foldmethod=indent
 set laststatus=2
 set modelines=5
