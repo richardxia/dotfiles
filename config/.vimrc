@@ -18,6 +18,9 @@ set textwidth=80
 set wildmode=longest,list
 set wildignore+=*.pyc,*__pycache__/
 
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
 " Disable concealing of double quotes that comes with Ubuntu's built-in JSON
 " syntax file, which conflicts with indentLine's use of the conceal feature.
 let g:vim_json_syntax_conceal = 0
