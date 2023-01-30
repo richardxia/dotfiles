@@ -16,6 +16,8 @@
 [pager]
 	branch = less --no-init --quit-if-one-screen
 	tag = less --no-init --quit-if-one-screen
+[pull]
+	ff = only
 [user]
 	email = richardxia@richardxia.com
 	name = Richard Xia
