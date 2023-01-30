@@ -30,8 +30,6 @@ let g:vim_json_syntax_conceal = 0
 " https://github.com/derekwyatt/vim-scala#scaladoc-comment-indentation
 let g:scala_scaladoc_indent = 1
 
-hi CursorLine cterm=None ctermbg=255
-
 filetype plugin indent on
 
 setlocal makeprg=flake8\ %
