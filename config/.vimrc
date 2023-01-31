@@ -21,9 +21,12 @@ set wildignore+=*.pyc,*__pycache__/
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
-" Disable concealing of double quotes that comes with Ubuntu's built-in JSON
+" Disable concealing of double quotes that comes with elzr/vim-json's
 " syntax file, which conflicts with indentLine's use of the conceal feature.
 let g:vim_json_syntax_conceal = 0
+" Disable concealing of double quotes that comes with vim 9.0's json.vim
+" syntax file, which conflicts with indentLine's use of the conceal feature.
+let g:vim_json_conceal = 0
 
 " Configure the vim-scala to properly indent Scaladoc comments with the star
 " aligned to the right.
