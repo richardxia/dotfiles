@@ -18,6 +18,8 @@
 	tag = less --no-init --quit-if-one-screen
 [pull]
 	ff = only
+[rebase]
+	autosquash = true
 [user]
 	email = richardxia@richardxia.com
 	name = Richard Xia
