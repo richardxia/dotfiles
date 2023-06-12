@@ -109,17 +109,4 @@ if type brew &>/dev/null; then
     [[ -r "$(brew --prefix)/etc/profile.d/bash_completion.sh" ]] && . "$(brew --prefix)/etc/profile.d/bash_completion.sh"
 fi
 
-if [ -f $HOME/.local/bin/virtualenvwrapper.sh ]; then
-    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-    . $HOME/.local/bin/virtualenvwrapper.sh
-elif [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-    . /usr/local/bin/virtualenvwrapper.sh
-elif [ -f /usr/local/share/python/virtualenvwrapper.sh ]; then
-    . /usr/local/share/python/virtualenvwrapper.sh
-fi
-
-if [ -n "$VIRTUAL_ENV" ]; then
-    . "$VIRTUAL_ENV/bin/activate"
-fi
-
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
