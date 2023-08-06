@@ -16,3 +16,5 @@ alias glns='git log --name-status'
 alias glp='git log --patch'
 alias grc='git rebase --continue'
 alias gri='git rebase --interactive'
+
+set -o ignoreeof

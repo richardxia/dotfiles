@@ -1,6 +1,5 @@
 [[ -e $HOME/.profile ]] && . $HOME/.profile
 
-export IGNOREEOF=2
 export LOCAL_SSH_AUTH_SOCK=$HOME/.ssh/ssh_auth_sock
 export PATH=$HOME/.local/bin:$PATH
 export PS1='\u@\h:\w\$ '
