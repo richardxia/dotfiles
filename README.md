@@ -25,3 +25,8 @@ These are things that need to be done once per new machine:
 ## Upgrading
 
 Just do a `git pull` and then run `./create_symlinks.sh`.
+
+## Notes on shell dotfiles
+
+This repo attempts to share dotfiles across multiple shells, specifically bash and zsh.
+It roughly follows the approach described by: https://blog.flowblok.id.au/2013-02/shell-startup-scripts.html

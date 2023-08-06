@@ -1,3 +1,5 @@
+# Aliases and interactive-specific environment variables.
+
 alias dc='docker-compose'
 alias dcr='docker-compose run --rm'
 alias dcu='docker-compose up'
